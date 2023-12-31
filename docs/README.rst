@@ -14,5 +14,7 @@ To create an HTML version of the docs:
 The documentation in ``_build/html/index.html`` can then be viewed in a web
 browser.
 
+Adding new user fields to this django doc.
+
 .. _ReST: https://docutils.sourceforge.io/rst.html
 .. _Sphinx: https://www.sphinx-doc.org/

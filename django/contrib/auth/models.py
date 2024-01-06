@@ -354,6 +354,13 @@ class AbstractUser(AbstractBaseUser, PermissionsMixin):
         ),
     )
     date_joined = models.DateTimeField(_('date joined'), default=timezone.now)
+    company = models.CharField(null=True, blank=False, max_length=200)
+    country = models.CharField(null=True, blank=False, max_length=200)
+    ho_location = models.CharField(null=True, blank=False, max_length=200)
+    address = models.CharField(null=True, blank=False, max_length=200)
+    phone_number = models.CharField(null=True, blank=False, max_length=200)
+    reporting_currency= models.CharField(null=True, blank=False, max_length=200)
+    timezone = models.CharField(null=True, blank=False, max_length=200)
 
     objects = UserManager()
 
